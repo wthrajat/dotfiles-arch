@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<ario-profiles>
+  <profile host="localhost" port="6600" timeout="5000" current="true" type="0">rajat-ario-mpd</profile>
+</ario-profiles>
