@@ -23,7 +23,7 @@
 - **Activity Monitor** \
 [gotop](https://github.com/cjbassi/gotop)
 - **Music** \
-[mpd](https://github.com/MusicPlayerDaemon/MPD) and (ncmpcpp)[https://github.com/ncmpcpp/ncmpcpp]
+[mpd](https://github.com/MusicPlayerDaemon/MPD) and [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)
 
 <hr>
 I made most of these from scratch. Copy at your own risk.
