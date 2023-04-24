@@ -113,11 +113,6 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 # keybindings for different actions: #
 ######################################
 
-# start a terminal
-bindsym Mod1+Return exec --no-startup-id alacritty;focus
-
-# Archlinux Logout
-bindsym $mod+Shift+e exec --no-startup-id archlinux-logout
 
 # kill focused window
 bindsym $mod+shift+q kill
@@ -127,17 +122,12 @@ bindsym $mod+shift+q kill
 # lock with a picture:
 # bindsym $mod+l exec --no-startup-id i3lock -i  ~/.config/i3/i3-lock-screen.png -p default|win -t
 # lock by blurring the screen:
-bindsym $mod+l exec --no-startup-id ~/.config/i3/scripts/blur-lock
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to update i3)
 bindsym $mod+Shift+r restart
-
-# Backlight control
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # change focus
 bindsym $mod+j focus left
@@ -186,29 +176,6 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-# open new empty workspace
-bindsym $mod+Shift+n exec --no-startup-id ~/.config/i3/scripts/empty_workspace
-
-# Multimedia Keys
-
-# volume
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
-
-# mute
-bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle && killall -USR1 i3blocks
-
-# audio control
-bindsym XF86AudioPlay exec --no-startup-id playerctl play
-bindsym XF86AudioPause exec --no-startup-id playerctl pause
-bindsym XF86AudioNext exec --no-startup-id playerctl next
-bindsym XF86AudioPrev exec --no-startup-id playerctl previous
-
-
-## App shortcuts
-bindsym $mod+w exec --no-startup-id /usr/bin/firefox
-bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
-
 
 ##########################################
 # configuration for workspace behaviour: #
@@ -239,8 +206,6 @@ set $ws10 "10"
 
 
 
-#get auth work with polkit-gnome
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # dex execute .desktop files + apps using /etc/xdg/autostart.
 # when second to i3 a DE is installed or mixed usage of i3 + xfce4 or GNOME
@@ -250,12 +215,6 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 exec --no-startup-id dex --autostart --environment i3
 
-
-# set wallpaper
-exec --no-startup-id sleep 2 && nitrogen --restore
-
-# Desktop notifications
-exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 
 
 ##################
@@ -311,11 +270,6 @@ client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
 client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 
 
-exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec_always --no-startup-id picom
-exec_always --no-startup-id bash ~/.config/polybar/launch.sh --colorblocks
-#exec_always --no-startup-id nm-applet --sm-disablei
-
 
 
 #####################################
@@ -352,3 +306,51 @@ for_window [class=".*"] border pixel 1
 gaps outer 5
 gaps inner 20
 gaps bottom 5
+
+################################################################################################ Auto execute here ;)
+
+bindsym Mod1+Return exec --no-startup-id alacritty;focus
+bindsym $mod+Shift+e exec --no-startup-id archlinux-logout
+exec_always --no-startup-id /usr/lib/polkit-gnome/polki
+t-gnome-authentication-agent-1
+exec_always --no-startup-id picom
+exec_always --no-startup-id bash ~/.config/polybar/launch.sh --colorblocks
+#exec_always --no-startup-id nm-applet --sm-disablei
+exec --no-startup-id nitrogen --restore
+
+# Desktop notifications
+exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
+
+bindsym $mod+l exec --no-startup-id ~/.config/i3/scripts/blur-lock
+
+
+# Backlight control
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
+
+# open new empty workspace
+bindsym $mod+Shift+n exec --no-startup-id ~/.config/i3/scripts/empty_workspace
+
+# Multimedia Keys
+
+# volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
+
+# mute
+bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle && killall -USR1 i3blocks
+
+# audio control
+bindsym XF86AudioPlay exec --no-startup-id playerctl play
+bindsym XF86AudioPause exec --no-startup-id playerctl pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+
+
+## App shortcuts
+bindsym $mod+w exec --no-startup-id /usr/bin/firefox
+bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
+
+#get auth work with polkit-gnome
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
