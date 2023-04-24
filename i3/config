@@ -252,9 +252,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 
 # set wallpaper
-# exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1
-
+exec --no-startup-id sleep 2 && nitrogen --restore
 
 # Desktop notifications
 exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
