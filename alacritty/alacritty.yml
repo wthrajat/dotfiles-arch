@@ -5,7 +5,7 @@ window:
     padding:
         x: 10
         y: 10
-    opacity: 0.3
+    opacity: 0.4
 
 font:
     normal:
@@ -51,4 +51,4 @@ colors:
 
 cursor:
     style: Beam
-    thickness: 0.2
+    thickness: 0.3
