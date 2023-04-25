@@ -21,7 +21,7 @@ font:
     bold_italic:
         family: MesloLGS NF
 
-    size: 10
+    size: 11
 
 colors:
     primary:
@@ -51,4 +51,4 @@ colors:
 
 cursor:
     style: Beam
-    thickness: 0.1
+    thickness: 0.2
