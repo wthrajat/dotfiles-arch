@@ -25,7 +25,7 @@
 [gotop](https://github.com/cjbassi/gotop)
 - **Music** \
 [mpd](https://github.com/MusicPlayerDaemon/MPD) and [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)
-- **Now Playing in Polybar** (Very cool)
+- **Now Playing in Polybar** (Very cool) \
 [polybar-now-playing](https://github.com/d093w1z/polybar-now-playing)
 
 <hr>
