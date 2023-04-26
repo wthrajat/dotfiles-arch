@@ -7,13 +7,13 @@ from unicodedata import east_asian_width
 # Config options
 
 # (int) : Length of media info string. If length of string exceedes this value, the text will scroll. Default value is 20
-message_display_len = 20
+message_display_len = 30
 
 # (int) : Font index of polybar. this value should be 1 more than the font value specified in polybar config.
 font_index = 1
 
 # (float) : Update speed of the text in seconds.
-update_delay = 0.4
+update_delay = 0.2
 
 # (list) : list of chars containing previous, play, pause, next glyphs for media controls in respective order
 control_chars = ['','','','']
@@ -129,7 +129,7 @@ def handle_event(*args):
 def update_message():
     global players, current_player,player_names, message, display_text, message_display_len, display_suffix, last_player_name
     if len(players) == 0:
-        tmp_message = "Play Some Song Bruh"
+        tmp_message = "    Play some song bhai :-P"
         update_prefix_suffix()
     else:
         name = get_name_by_index(current_player)
