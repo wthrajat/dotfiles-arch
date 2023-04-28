@@ -1,0 +1,57 @@
+shell:
+  program: /bin/bash
+
+window:
+  padding:
+    x: 10
+    y: 10
+  opacity: 0.4
+
+font:
+  normal:
+    family: MesloLGS NF
+    style: Regular
+
+  bold:
+    family: MesloLGS NF
+
+  italic:
+    family: MesloLGS NF
+
+  bold_italic:
+    family: MesloLGS NF
+
+  size: 11
+
+colors:
+  name: Lost Woods
+  author: Baskerville
+  primary:
+    background: "#000000"
+    foreground: "#919191"
+  cursor:
+    text: "#000000"
+    cursor: "#919191"
+  normal:
+    black: "#303030"
+    red: "#a13a38"
+    green: "#00715d"
+    yellow: "#006f32"
+    blue: "#a43261"
+    magenta: "#913e88"
+    cyan: "#007086"
+    white: "#c6c6c6"
+  bright:
+    black: "#5e5e5e"
+    red: "#ffa59a"
+    green: "#24dfc4"
+    yellow: "#73db95"
+    blue: "#ff9fc9"
+    magenta: "#ffa7f6"
+    cyan: "#00ddf4"
+    white: "#ffffff"
+
+cursor:
+  style: Beam
+  thickness: 0.3
+theme: Baskerville - lost woods

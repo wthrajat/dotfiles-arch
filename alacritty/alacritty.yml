@@ -1,54 +1,57 @@
 shell:
-    program: /bin/bash
+  program: /bin/bash
 
 window:
-    padding:
-        x: 10
-        y: 10
-    opacity: 0.4
+  padding:
+    x: 10
+    y: 10
+  opacity: 0.5
 
 font:
-    normal:
-        family: MesloLGS NF
-        style: Regular
+  normal:
+    family: MesloLGS NF
+    style: Regular
 
-    bold:
-        family: MesloLGS NF
+  bold:
+    family: MesloLGS NF
 
-    italic:
-        family: MesloLGS NF
+  italic:
+    family: MesloLGS NF
 
-    bold_italic:
-        family: MesloLGS NF
+  bold_italic:
+    family: MesloLGS NF
 
-    size: 11
+  size: 11
 
 colors:
-    primary:
-        foreground: '#ffffff'
-        background: '#010101'
-    cursor:
-        cursor: '#ffffff'
-    normal:
-        black: "#1b1d1e"
-        red: "#f92672"
-        green: "#82b414"
-        yellow: "#fd971f"
-        blue: "#0066cc"
-        magenta: "#8c54fe"
-        cyan: "#465457"
-        white: "#ccccc6"
+  # Default colors
+  primary:
+    background: '#000000'
+    foreground: '#dddddd'
 
-    bright:
-        black: "#505354"
-        red: "#ff5995"
-        green: "#b6e354"
-        yellow: "#feed6c"
-        blue: "#333399"
-        magenta: "#9e6ffe"
-        cyan: "#899ca1"
-        white: "#f8f8f2"
+  # Normal colors
+  normal:
+    black: '#000000'
+    red: '#cc0403'
+    green: '#19cb00'
+    yellow: '#cecb00'
+    blue: '#0d73cc'
+    magenta: '#cb1ed1'
+    cyan: '#0dcdcd'
+    white: '#dddddd'
+
+  # Bright colors
+  bright:
+    black: '#767676'
+    red: '#f2201f'
+    green: '#23fd00'
+    yellow: '#fffd00'
+    blue: '#1a8fff'
+    magenta: '#fd28ff'
+    cyan: '#14ffff'
+    white: '#ffffff'
 
 cursor:
-    style: Beam
-    thickness: 0.3
+  style: Beam
+  thickness: 0.3
+theme: Kitty
