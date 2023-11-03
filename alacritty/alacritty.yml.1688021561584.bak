@@ -24,34 +24,33 @@ font:
   size: 11
 
 colors:
-  # Default colors
   primary:
     background: '#000000'
-    foreground: '#dddddd'
+    foreground: '#00ff00'
 
   # Normal colors
   normal:
-    black: '#000000'
-    red: '#cc0403'
-    green: '#19cb00'
-    yellow: '#cecb00'
-    blue: '#0d73cc'
-    magenta: '#cb1ed1'
-    cyan: '#0dcdcd'
-    white: '#dddddd'
+    black: '#2e3436'
+    red: '#cc0000'
+    green: '#73d216'
+    yellow: '#edd400'
+    blue: '#3465a4'
+    magenta: '#75507b'
+    cyan: '#06989a'
+    white: '#d3d7cf'
 
   # Bright colors
   bright:
-    black: '#767676'
-    red: '#f2201f'
-    green: '#23fd00'
-    yellow: '#fffd00'
-    blue: '#1a8fff'
-    magenta: '#fd28ff'
-    cyan: '#14ffff'
-    white: '#ffffff'
+    black: '#2e3436'
+    red: '#ef2929'
+    green: '#8ae234'
+    yellow: '#fce94f'
+    blue: '#729fcf'
+    magenta: '#ad7fa8'
+    cyan: '#34e2e2'
+    white: '#eeeeec'
 
 cursor:
   style: Beam
   thickness: 0.3
-theme: Kitty
+theme: Tango

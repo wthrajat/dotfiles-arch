@@ -295,9 +295,9 @@ for_window [class=".*"] border pixel 0
 
 # Gaps
 
-gaps outer 5
-gaps inner 20
-gaps bottom 5
+gaps outer 10
+gaps inner 15
+gaps bottom 10
 
 ################################################################################################ Auto execute here ;)
 
