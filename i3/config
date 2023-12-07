@@ -271,8 +271,7 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 #####################################
 
 ## rofi bindings fancy application menu
-
-bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun \-config ~/.config/rofi/rofidmenu.rasi
+bindsym $mod+d exec --no-startup-id "~/.config/rofi/launchers/type-6/launcher.sh"
 
 
 ## rofi bindings for window menu
