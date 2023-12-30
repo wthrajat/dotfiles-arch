@@ -1,0 +1,63 @@
+theme = "Zenburn"
+
+[colors]
+
+name = "zenburn"
+
+[colors.bright]
+black = "#709080"
+blue = "#94bff3"
+cyan = "#93e0e3"
+green = "#c3bf9f"
+magenta = "#ec93d3"
+red = "#dca3a3"
+white = "#ffffff"
+yellow = "#f0dfaf"
+
+[colors.cursor]
+cursor = "#ffffff"
+text = "#000000"
+
+[colors.normal]
+black = "#1e2320"
+blue = "#506070"
+cyan = "#8cd0d3"
+green = "#60b48a"
+magenta = "#dc8cc3"
+red = "#705050"
+white = "#dcdccc"
+yellow = "#dfaf8f"
+
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
+
+[cursor]
+style = "Beam"
+thickness = 0.3
+
+[font]
+size = 11
+
+[font.bold]
+family = "MesloLGS NF"
+
+[font.bold_italic]
+family = "MesloLGS NF"
+
+[font.italic]
+family = "MesloLGS NF"
+
+[font.normal]
+family = "MesloLGS NF"
+style = "Regular"
+
+[shell]
+program = "/bin/zsh"
+
+[window]
+opacity = 0.6
+
+[window.padding]
+x = 10
+y = 10
