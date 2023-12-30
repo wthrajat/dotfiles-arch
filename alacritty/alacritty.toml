@@ -1,8 +1,8 @@
-theme = "Zenburn"
+#theme = "Zenburn"
 
 [colors]
 
-name = "zenburn"
+# name = "zenburn"
 
 [colors.bright]
 black = "#709080"
