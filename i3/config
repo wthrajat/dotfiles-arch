@@ -300,7 +300,7 @@ gaps bottom 10
 
 ################################################################################################ Auto execute here ;)
 
-bindsym Mod1+Return exec --no-startup-id alacritty;focus
+bindsym Mod1+Return exec --no-startup-id "alacritty msg create-window || alacritty";focus
 bindsym $mod+Shift+e exec --no-startup-id archlinux-logout
 exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always --no-startup-id picom
