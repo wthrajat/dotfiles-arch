@@ -53,7 +53,7 @@ family = "MesloLGS NF"
 style = "Regular"
 
 [shell]
-program = "/bin/zsh"
+program = "/bin/fish"
 
 [window]
 opacity = 0.6
