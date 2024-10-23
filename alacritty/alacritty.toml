@@ -52,7 +52,7 @@ family = "MesloLGS NF"
 family = "MesloLGS NF"
 style = "Regular"
 
-[shell]
+[terminal.shell]
 program = "/bin/fish"
 
 [window]
